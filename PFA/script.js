@@ -12,16 +12,11 @@ class Job {
     }
 }
 
-
-
 let allJobs = [];
 let latestJobs = [];
 
-
-
 const startOfLastTwoWeeks = new Date();
 startOfLastTwoWeeks.setDate(startOfLastTwoWeeks.getDate() - 14);
-
 
 fetch('http://localhost:8080/api/v1/jobs') 
     .then(response => response.json())
