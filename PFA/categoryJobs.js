@@ -1,14 +1,10 @@
 const category = localStorage.getItem('selectedCategory').toLowerCase().replace(/& /g, '').trim();
 
-
 const storedJobs = JSON.parse(localStorage.getItem("jobs"));
 
 const filteredJobs = storedJobs.filter(job => {
     return job.description.toLowerCase().includes(category);
 });
-
-
-
 
 displayJobs(filteredJobs);
 
