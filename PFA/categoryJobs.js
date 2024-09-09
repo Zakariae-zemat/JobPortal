@@ -37,8 +37,6 @@ function displayJobs(jobsArray) {
 
         const companySpan = document.createElement('span');
         companySpan.className = 'company-link bg-blue-100 text-blue-700 rounded-full px-4 py-2 text-sm flex gap-1 items-center cursor-pointer hover:underline decoration-solid';
-        
-
         companySpan.setAttribute('data-company',job.company);
 
         const companySvg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
