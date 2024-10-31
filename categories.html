@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>acceuil</title>
+</head>
+<body class="bg-gray-50">
+    <header>
+        <nav class="flex h-auto w-full bg-[#071952] shadow-lg justify-between fixed md:h-16">
+            <div class="flex w-full justify-between ">
+                <div class="flex px-6 w-1/2 items-center font-semibold md:w-1/5 md:px-1 md:flex md:items-center md:justify-center" x-transition:enter="transition ease-out duration-300">
+                    <img class="h-16" src="LOGO (1).png" alt="">
+                </div>
+                <div class="w-3/5 items-center justify-evenly font-semibold md:flex">
+                    <a href="acceuil.html" class="text-white text-semibold hover:text-[#37B7C3] text-semibold">Accueil</a>
+                    <a href="companies.html" class="text-white text-semibold hover:text-[#37B7C3] text-semibold">Entreprises</a>
+                    <a href="categories.html" class="text-white text-semibold hover:text-[#37B7C3] text-semibold">Categories</a>
+                    <a href="" class="text-white text-semibold hover:text-[#37B7C3] text-semibold">Favoris</a>
+                </div>
+                <div class="w-1/5 items-center justify-evenly font-semibold md:flex">
+                  <button class="bg-[#071952] text-white border border-white rounded-lg px-8 py-2 hover:bg-[#088395]">Login</button>
+                  <button class="bg-[#37B7C3] text-white rounded-lg px-7 py-2 hover:bg-[#088395]">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-[url(bienvenuePic.png)] bg-cover bg-center bg-no-repeat h-screen w-full">
+            <h1 class="text-5xl text-white font-bold  text-left text-shadow pl-16 pt-48 leading-normal">Explorez vos opportunités<br>professionnelles avec nous!</h1>
+            <p class="text-white pl-16 mt-12">Trouvez un job au Maroc et développez vos opportunités de carrière.</p>
+            <form class="max-w-md">
+                <div class="relative rounded-3xl drop-shadow-xl flex justify-between pl-16 mt-24">
+                    <input type="search" id="company-search" class="block w-auto mr-5 p-6 ps-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 " placeholder="secteur" required />
+                    <button id="searchBtn" class="p-6 text-sm font-medium h-full text-white bg-[#37B7C3] rounded-xl hover:bg-[#088395] focus:ring-4 focus:outline-none focus:ring-blue-300">
+                        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <div id="CategoryListingContainer" class="grid grid-cols-2 gap-2 justify-center  bg-gray-50 mb-16">
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-la-programmation-100.png" alt="">
+            <h1 class="font-bold text-xl m-12"> <a href="CategoryJobs.html">Information Technology</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl  flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-balance-100.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Legal</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-big-data-100.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Data</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-camion-100.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Logistics</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-éducation-96.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Education</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-fabrication-100.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Manufacturing & Production</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-finance-64.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Finance</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-gestion-de-projet-90.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Project management</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-haut-parleur-1-100.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Marketing & Sales</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-healthcare-64.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Healthy care</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-hospitality-64.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Hospitality & Travel</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-ingénierie-64.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Engineering</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-médias-96.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Media</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-outils-administratifs-64.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Administration</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-ouvrier-100.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Construction</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-personnalisation-windows10-100.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Graphic design</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-research-development-64.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Research</a></h1>
+        </div>
+        <div id="categoryCard" class="relative rounded-3xl cursor-pointer drop-shadow-xl flex jus items-center justify-center overflow-hidden bg-gray-50 mx-12 sm:py-8">
+            <img src="icons8-ressources-humaines-100.png" alt="">
+            <h1 class="font-bold text-xl m-12"><a href="CategoryJobs.html">Human Resources</a></h1>
+        </div>
+        
+    </div>
+    <footer class="w-full text-gray-700 bg-[#071952] body-font">
+        <div
+            class="container flex flex-wrap px-5 py-24 mx-auto md:items-center lg:items-start md:flex-row md:flex-no-wrap">
+            <div class="flex-shrink-0 w-64 mx-auto text-center md:mx-0 md:text-left">
+                <a class="cursor-pointer text-4xl flex items-center justify-center font-bold text-gray-900 title-font md:justify-start">
+                    <img class="h-16" src="LOGO (1).png" alt="">
+                </a>
+                <p class="mt-2 text-sm text-gray-500">Explorez vos opportunités professionnelles avec nous!</p>
+                <div class="mt-4">
+                    <span class="inline-flex justify-center mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
+                        <a class="text-gray-500 cursor-pointer hover:text-gray-700">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-5 h-5" viewBox="0 0 24 24">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                            <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="w-5 h-5" viewBox="0 0 24 24">
+                                <path
+                                    d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a class="ml-3 text-gray-500 cursor-pointer hover:text-gray-700">
+                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+                            </svg>
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="flex flex-wrap flex-grow mt-10 -mb-10 text-center md:pl-20 md:mt-0 md:text-left">
+                <div class="w-full px-4 lg:w-1/4 md:w-1/2">
+                    <nav class="mb-10 list-none">
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-600 font-semibold">Home</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-600 font-semibold">About</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-600 font-semibold">Entreprises</a>
+                        </li>
+                        <li class="mt-3">
+                            <a class="text-gray-500 cursor-pointer hover:text-gray-600 font-semibold">categories</a>
+                        </li>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="bg-[#37B7C3]">
+            <div class="container px-5 py-4 mx-auto">
+                <p class="text-sm text-gray-700 capitalize xl:text-center">© 2024 All rights reserved </p>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        document.querySelectorAll('#categoryCard').forEach(Element => {
+        
+            Element.addEventListener('click', function() {
+            const category = this.textContent;
+            localStorage.setItem('selectedCategory', category);
+        });
+        });
+    </script>
+    
+</body>
+</html>

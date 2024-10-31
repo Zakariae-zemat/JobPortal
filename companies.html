@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>acceuil</title>
+</head>
+<body class="bg-gray-50">
+    <header>
+        <nav class="flex h-auto w-full bg-[#071952] shadow-lg justify-between fixed md:h-16">
+            <div class="flex w-full justify-between ">
+                <div class="flex px-6 w-1/2 items-center font-semibold md:w-1/5 md:px-1 md:flex md:items-center md:justify-center" x-transition:enter="transition ease-out duration-300">
+                    <img class="h-16" src="LOGO (1).png" alt="">
+                </div>
+                <div class="w-3/5 items-center justify-evenly font-semibold md:flex">
+                    <a href="acceuil.html" class="text-white text-semibold hover:text-[#37B7C3] text-semibold">Accueil</a>
+                    <a href="companies.html" class="text-white text-semibold hover:text-[#37B7C3] text-semibold">Entreprises</a>
+                    <a href="categories.html" class="text-white text-semibold hover:text-[#37B7C3] text-semibold">Categories</a>
+                    <a href="" class="text-white text-semibold hover:text-[#37B7C3] text-semibold">Favoris</a>
+                </div>
+                <div class="w-1/5 items-center justify-evenly font-semibold md:flex">
+                  <button class="bg-[#071952] text-white border border-white rounded-lg px-8 py-2 hover:bg-[#088395]">Login</button>
+                  <button class="bg-[#37B7C3] text-white rounded-lg px-7 py-2 hover:bg-[#088395]">Sign Up</button>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-[url(bienvenuePic.png)] bg-cover bg-center bg-no-repeat h-screen w-full">
+            <h1 class="text-5xl text-white font-bold  text-left text-shadow pl-16 pt-48 leading-normal">Explorez vos opportunités<br>professionnelles avec nous!</h1>
+            <p class="text-white pl-16 mt-12">Trouvez un job au Maroc et développez vos opportunités de carrière.</p>
+            <form class="max-w-md">
+                <div class="relative flex justify-between pl-16 mt-24">
+                    <input type="search" id="company-search" class="block w-auto mr-5 p-6 ps-4 text-sm text-gray-900 border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 " placeholder="Nom de l'entreprise" required />
+                    <button id="searchBtn" class="p-6 text-sm font-medium h-full text-white bg-[#37B7C3] rounded-xl hover:bg-[#088395] focus:ring-4 focus:outline-none focus:ring-blue-300">
+                        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <div id="CompanyListingContainer" class="grid grid-cols-2 gap-2 justify-center  bg-gray-50">
+        
+        
+        <div id="CompanyDetail" class="relative flex flex-col jus items-center justify-center overflow-hidden bg-gray-50 mx-16 sm:py-12">
+        
+            <div class="bg-white  drop-shadow-xl w-full max-w-4xl flex flex-col sm:flex-row gap-3 sm:items-center  justify-between px-5 py-4 rounded-md">
+                <div>
+                    <div class="flex items-center gap-3 mt-2">
+                        <span id="company-name" class="bg-blue-100 text-blue-700 rounded-full px-4 py-2 text-sm flex gap-1 items-center cursor-pointer hover:underline decoration-solid">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 21h19.5m-18-18v18m10.5-18v18m6-13.5V21M6.75 6.75h.75m-.75 3h.75m-.75 3h.75m3-6h.75m-.75 3h.75m-.75 3h.75M6.75 21v-3.375c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21M3 3h12m-.75 4.5H21m-3.75 3.75h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Zm0 3h.008v.008h-.008v-.008Z" />
+                            </svg><a href="JobsAtCompany.html" target="_blank">Oracle</a>
+                        </span>
+                        <span id="Location" class="text-slate-600 text-sm flex gap-1 items-center"> <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg> Remote, UK</span>
+                    </div>
+                </div>
+                <div>
+                    <button class="bg-blue-900 text-white font-medium px-4 py-2 rounded-md flex gap-1 items-center">Explore more <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                    </button>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    
+    <script src="companiesScript.js"></script>
+    
+</body>
+</html>
